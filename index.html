@@ -3,14 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>James Crook</title>
         <meta name="description" content="James Crook">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/modernizr.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,7 +19,16 @@
         <video autoplay loop poster="./img/bg.png" id="bgvid">
         <source src="new.mp4">
         </video>
-        <div class="cover"><h1>James Crook</h1></div>
+        <div class="cover">
+        <h1 id="name">James Crook \FrontEnd\</h1>
+        <ul id="social">
+          <li> <a href="https://github.com/jacrook"><i class="fa fa-github-alt"></i></a></li>
+          <li> <a href="https://instagram.com/c.r.o.o.k/"><i class="fa fa-instagram"></i></a></li>
+          <li> <a href="https://www.facebook.com/jimcrook"><i class="fa fa-facebook"></i></a></li>
+          <li> <a href="https://twitter.com/jimmeecrack"><i class="fa fa-twitter"></i></a></li>
+          <li> <a href="https://www.linkedin.com/in/jamescrooklinked"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
         <script>
@@ -30,6 +38,12 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-27403992-1','auto');ga('send','pageview');
+        </script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script>
+          jQuery("#name").fitText(1.2);
+          jQuery("#social").fitText(1.8);
         </script>
     </body>
 </html>
